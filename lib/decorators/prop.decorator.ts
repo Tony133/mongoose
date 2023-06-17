@@ -5,6 +5,8 @@ import { TypeMetadataStorage } from '../storages/type-metadata.storage';
 
 const TYPE_METADATA_KEY = 'design:type';
 /**
+ * @publicApi
+ * 
  * Interface defining property options that can be passed to `@Prop()` decorator.
  */
 export type PropOptions<T = any> =
@@ -12,7 +14,9 @@ export type PropOptions<T = any> =
   | mongoose.SchemaType;
 
 /**
- * @Prop decorator is used to mark a specific class property as a Mongoose property.
+ * @publicApi
+ * 
+ * "@Prop" decorator is used to mark a specific class property as a Mongoose property.
  * Only properties decorated with this decorator will be defined in the schema.
  */
 export function Prop(options?: PropOptions): PropertyDecorator {

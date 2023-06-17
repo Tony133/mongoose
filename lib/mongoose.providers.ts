@@ -3,6 +3,9 @@ import { Connection, Document, Model } from 'mongoose';
 import { getConnectionToken, getModelToken } from './common/mongoose.utils';
 import { AsyncModelFactory, ModelDefinition } from './interfaces';
 
+/**
+ * @publicApi
+ */
 export function createMongooseProviders(
   connectionName?: string,
   options: ModelDefinition[] = [],
